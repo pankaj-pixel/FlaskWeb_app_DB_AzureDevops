@@ -1,0 +1,62 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    try:\n        conn = mysql.connector.connect(\n            host=os.getenv(\"DB_HOST\"),\n            user=os.getenv(\"DB_USER\"),\n            password=os.getenv(\"DB_PASSWORD\"),\n            database=os.getenv(\"DB_NAME\")\n        )\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM tags\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef index():\n    try:\n        conn = mysql.connector.connect(\n            host=os.getenv(\"DB_HOST\"),\n            user=os.getenv(\"DB_USER\"),\n            password=os.getenv(\"DB_PASSWORD\"),\n            database=os.getenv(\"DB_NAME\")\n        )",
+        "detail": "app",
+        "documentation": {}
+    }
+]

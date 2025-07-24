@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python garbage
+__pycache__/
+*.pyc
+
+# Databases
+*.sqlite3
+
+# MySQL init scripts (if sensitive)
+mysql-init/*.sql
+
+# Logs
+*.log
+
+.venv
